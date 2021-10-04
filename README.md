@@ -1,3 +1,3 @@
 # Minesweeper
 
-A basic minesweeper game I made a few years ago
+A basic console based minesweeper game I made a few years ago written in C++

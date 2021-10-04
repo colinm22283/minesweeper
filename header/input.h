@@ -46,14 +46,16 @@ int awaitInput(void)
 int get_int(std::string message)
 {
     std::cout << message;
-    return std::cin.get();
+    int temp;
+    std::cin >> temp;
+    return temp;
 }
 long get_long(std::string message)
 {
     std::cout << message;
-    std::string temp;
+    long temp;
     std::cin >> temp;
-    return std::stol(temp);
+    return temp;
 }
 std::string get_string(std::string message)
 {
