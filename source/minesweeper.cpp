@@ -448,10 +448,8 @@ void openMenu()
 void pauseMenu()
 {
     int x;
-    {
-        std::string opt[] = { "RESUME", "SAVE", "MAIN MENU" };
-        x = menuT("PAUSE", 5, opt, 3);
-    }
+    const std::string opt[] = { "RESUME", "SAVE", "MAIN MENU" };
+    x = menuT("PAUSE", 5, opt, 3);
 
     if (x == 1)
     {

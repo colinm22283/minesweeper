@@ -122,7 +122,7 @@ int menu(std::string opt[], int len) // |= ON, &= OFF
     clear();
     return sel;
 }
-int menuT(std::string title, int tLen, std::string opt[], int len) // |= ON, &= OFF
+int menuT(const char* title, int tLen, const std::string opt[], int len) // |= ON, &= OFF
 {
     //find longest option
     int lengths[len];
@@ -144,7 +144,6 @@ int menuT(std::string title, int tLen, std::string opt[], int len) // |= ON, &= 
 
     if (tLen > longest) longest = tLen;
 
-    //edit terminal mode
     struct termios info;
     tcgetattr(0, &info);
     info.c_lflag |= ECHO;
